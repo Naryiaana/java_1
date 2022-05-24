@@ -2,6 +2,9 @@ package lesson1;
 
 public class JustTestingSmthFromJavaRush {
     public static void main(String[] args) {
+        greeting ("Nariana");
+        greeting ("Russia");
+
         /*int a = 5;
         String name = a + a + a + "0";
         System.out.println(name);*/
@@ -23,10 +26,16 @@ public class JustTestingSmthFromJavaRush {
         System.out.println(bc + ab);
     }
 
+    private static void greeting (String name) {
+        System.out.println ("Hello, " + name);
+    }
     String name = "Rom".toLowerCase();
     int count = ("Rom" + 12).length();
+
        /* System.out.println(count);
         System.out.println(name);*/
+
+
 }
 
 

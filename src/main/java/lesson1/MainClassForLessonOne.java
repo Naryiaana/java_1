@@ -54,7 +54,7 @@ public class MainClassForLessonOne {
     }
 
     private static void checkAppraisal() {
-        int appraisal = ThreadLocalRandom.current().nextInt(8) - 2; /*простая рамондизация, здесь диапазон от -2 до 5*/
+        int appraisal = ThreadLocalRandom.current().nextInt(8) - 2; /*простая рандомизация, здесь диапазон от -2 до 5*/
         System.out.println("Школьник принес оценку: " + appraisal);
 
         if (appraisal == 5) {
