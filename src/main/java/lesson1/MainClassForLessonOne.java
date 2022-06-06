@@ -5,18 +5,21 @@ import java.util.concurrent.ThreadLocalRandom;
 public class MainClassForLessonOne {
 
     public static void main(String[] args) {
-        System.out.println("Let's get it started!");
-        printHello();
-        printHello();
-        printHello();
-        printHello();
-        printHello();
-        testVars();
-        System.out.println("Привет!");
-        checkAppraisal();
+//        System.out.println("Let's get it started!");
+
+        MainClassForLessonOne test = new MainClassForLessonOne();
+        test.printHello();
+        test.printHello();
+        test.printHello();
+        test.printHello();
+        test.printHello(); //нестатика вызывается только лишь у экземпляра
+
+       /* testVars();
+        System.out.println("Привет!");*/
+       MainClassForLessonOne.checkAppraisal(); // а статика через класс
     }
 
-    static void printHello() {
+    void printHello() {
         System.out.println("Hello!");
     }
 
