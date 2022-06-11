@@ -79,16 +79,28 @@ public class TestArrays {
             }
             System.out.println();
         }
+
         //внизу тоже самое как for each но через цикл for
+
+         //внизу тоже самое как for each но через цикл for
+
         for (int i = 0; i < deepData.length; i++) {
             int[] deepDatum = deepData[i];
             for (int j = 0; j < deepData[i].length; j++) {
                 int num = deepDatum[j];
 //                System.out.printf("%2d ", deepData[i][j]);
+
                 System.out.printf("%2d ", num);
             }
             System.out.println();
         }
 
     }
+           System.out.printf("%2d ", num);
+            }
+            System.out.println();
+    }
+
+}
+
 }

@@ -30,6 +30,7 @@ public class Main {
         }
     }
 
+
     private static void testRandom() {
         int[] data = new int[40];
         Random random = new Random();
@@ -52,5 +53,29 @@ public class Main {
         System.out.println(Arrays.toString(data));
     }
 }
+
+        private static void testRandom() {
+            int[] data = new int[40];
+            Random random = new Random();
+
+            for (int i = 0; i < data.length; i++) {
+                data[i] = random.nextInt(); //-2147kk - +2147kk
+                data[i] = random.nextInt(10); //0 - 9, каждая строка перекрывает предыдущую кстати
+                data[i] = random.nextInt(8) + 3; //3 - 10
+                data[i] = random.nextInt(3, 11); //3 - 10
+                data[i] = random.nextInt(13) - 5; //-5 - 7
+                data[i] = random.nextInt(-5, 8); //-5 - 7
+
+                //мир до сих пор не сошелся что лучше либо первые два способа либо этот
+                data[i] = (int) (Math.random() * 10); //0 - 9
+                data[i] = (int) (Math.random() * 8) + 3; //3 - 10
+                data[i] = (int) (Math.random() * 13) - 5; //3 - 10
+
+            }
+
+            System.out.println(Arrays.toString(data));
+        }
+    }
+
 
 

@@ -33,11 +33,14 @@ public class TicTacToeExtended {
 
     private static void init() {
         turnsCount = 0;
+
         //получить размер игрового поля
         //подобрать победную серию фишек для выбранного размера
         //размер 3-6 -> победная серия 3
         //размер 7-10 -> победная серия 4
         //размер 10+ -> победная серия 5
+
+
         initMap();
     }
 
@@ -120,7 +123,11 @@ public class TicTacToeExtended {
         while (true) {
             if (in.hasNextInt()) {
                 int n = in.nextInt();
+
                 if (isNumberValid(n)) {
+
+                if (isNumverValid(n)) {
+
                     return n;
                 }
                 System.out.println("!!!Проверьте значение координаты. Должно быть от 1 до " + SIZE);
@@ -131,7 +138,11 @@ public class TicTacToeExtended {
         }
     }
 
+
     private static boolean isNumberValid(int n) {
+
+    private static boolean isNumverValid(int n) {
+
         return n >= 1 && n<= SIZE;
     }
 
