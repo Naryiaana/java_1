@@ -53,7 +53,7 @@ public class TestArrays {
     private static void testTwoArray() {
 //        int[][] deepData = {{1, 2, 3}, {1, 2, 3},{1, 2, 3}};
         int[][] deepData = new int[5][7];
-        
+
      /*   deepData[0][0] = 1;
         deepData[0][1] = 1;
         deepData[0][2] = 1;
@@ -79,16 +79,28 @@ public class TestArrays {
             }
             System.out.println();
         }
+
+        //внизу тоже самое как for each но через цикл for
+
          //внизу тоже самое как for each но через цикл for
+
         for (int i = 0; i < deepData.length; i++) {
             int[] deepDatum = deepData[i];
             for (int j = 0; j < deepData[i].length; j++) {
                 int num = deepDatum[j];
 //                System.out.printf("%2d ", deepData[i][j]);
-            System.out.printf("%2d ", num);
+
+                System.out.printf("%2d ", num);
+            }
+            System.out.println();
+        }
+
+    }
+           System.out.printf("%2d ", num);
             }
             System.out.println();
     }
 
 }
+
 }

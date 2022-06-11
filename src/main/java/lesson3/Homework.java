@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Homework {
     public static void main(String[] args) {
-        
+
         arrayOne();
         arrayFromOneToHundred();
         arrayLessThanSixMultiplyByTwo();
@@ -52,6 +52,10 @@ public class Homework {
         int[][] deepData = new int[5][5];
         int n = deepData.length - 1;
         for (int i = 0; i < deepData.length; i++) {
+
+            deepData[i][i] = 1;
+            deepData[i][n - i] = 1;
+
            deepData[i][i] = 1;
            deepData[i][n - i] = 1;
         }
